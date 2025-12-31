@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>去異味工程科學指南 | 科學原理與解決方案</title>
+    <meta name="description" content="深入解析室內異味成因，探討傳統工法為何無效。WETOP 提供基於科學原理的去異味解決方案，針對低濃度化學污染進行實質去除。">
+    <meta name="keywords" content="去異味, 除臭, 室內空氣品質, 異味處理, 裝潢味, 甲醛, 硫化氫, 異味控制, WETOP">
+    <meta property="og:title" content="去異味工程科學指南 | 科學原理與解決方案">
+    <meta property="og:description" content="你聞到的不是臭，是低濃度化學污染。了解為什麼傳統工法無法真正去異味，以及真正的科學解決方案。">
+    <meta property="og:image" content="image/低濃度化學汙染.jpg">
+    <meta property="og:type" content="website">
+    <link rel="stylesheet" href="style.css">
+    <!-- 引入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- 引入 Lucide Icons (通過 CDN) -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- 導航欄 -->
+    <nav id="navbar">
+        <div class="container nav-container">
+            <div class="logo" onclick="scrollToSection('hero')">去異味工程科學指南</div>
+            
+            <div class="nav-links desktop-only">
+                <button onclick="scrollToSection('truth')" class="nav-item" data-target="truth">異味真相</button>
+                <button onclick="scrollToSection('science')" class="nav-item" data-target="science">科學原理</button>
+                <button onclick="scrollToSection('comparison')" class="nav-item" data-target="comparison">工法對比</button>
+                <button onclick="scrollToSection('solution')" class="nav-item" data-target="solution">真正方案</button>
+                <button onclick="scrollToSection('cta')" class="btn-primary">了解方案</button>
+            </div>
+
+            <button class="mobile-menu-btn mobile-only" onclick="toggleMobileMenu()">
+                <i data-lucide="menu"></i>
+            </button>
+        </div>
+
+        <!-- 手機版菜單 -->
+        <div id="mobile-menu" class="mobile-menu hidden">
+            <button onclick="scrollToSection('truth')">異味真相</button>
+            <button onclick="scrollToSection('science')">科學原理</button>
+            <button onclick="scrollToSection('comparison')">工法對比</button>
+            <button onclick="scrollToSection('solution')">真正方案</button>
+            <button onclick="window.location.href='https://www.pict-inside.com/'" class="btn-primary full-width">了解WETOP解決方案</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <img src="image/低濃度化學汙染.jpg" alt="你聞到的不是臭，是低濃度化學污染。室內異味，幾乎都來自 ppb～低 ppm 等級的化學分子。異味不是高濃度問題，而是低濃度、長時間存在，且已跨過人類嗅覺閾值的問題。" class="hero-full-img">
+        <div class="container hero-content fade-in-up">
+            <div class="sr-only">
+                <h1>
+                    你聞到的<br>
+                    <span class="text-glow">不是臭</span><br>
+                    是低濃度<br>
+                    <span class="text-glow">化學污染</span>
+                </h1>
+                
+                <p class="hero-desc">
+                    室內異味，幾乎都來自 <strong>ppb～低 ppm</strong> 等級的化學分子。<br>
+                    異味不是高濃度問題，而是低濃度、長時間存在，且已跨過人類嗅覺閾值的問題。
+                </p>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i data-lucide="arrow-right" class="rotate-90"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Truth Section -->
+    <section id="truth" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">異味的真相：為什麼儀器說正常，你卻聞得到？</h2>
+            
+            <div class="grid-3 card-grid">
+                <!-- Card 1 -->
+                <div class="card glow-hover">
+                    <div class="card-accent accent-primary"></div>
+                    <h3 class="card-label text-primary">嗅覺閾值</h3>
+                    <div class="card-value">ppb 等級</div>
+                    <div class="card-sub">(10⁻⁹)</div>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card glow-hover">
+                    <div class="card-accent accent-yellow"></div>
+                    <h3 class="card-label text-yellow">法規/職安標準</h3>
+                    <div class="card-value">ppm 等級</div>
+                    <div class="card-sub">(10⁻⁶)</div>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card card-danger glow-hover-danger">
+                    <div class="card-accent accent-danger"></div>
+                    <h3 class="card-label text-danger">中間差距</h3>
+                    <div class="card-value text-danger">1000倍以上</div>
+                    <div class="card-sub text-danger">儀器合格 ≠ 無異味</div>
+                </div>
+            </div>
+            
+            <div class="fact-box">
+                <p>
+                    <span class="text-primary">核心事實：</span> 異味存在與否，最後由人的鼻子決定。不是儀器，不是法規數值，而是官能測試——人的嗅覺。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Science Section -->
+    <section id="science" class="section-padding bg-muted">
+        <div class="container">
+            <h2 class="section-title">嗅覺科學：為何90%去除率是最低門檻？</h2>
+            
+            <h3 class="text-center text-primary" style="margin-bottom: 30px; font-size: 1.5rem;">主觀嗅覺強度公式 (韋伯—費希納定律)</h3>
+
+            <div class="science-visual-container">
+                <div class="image-container">
+                    <img src="image/濃度與嗅覺強度關係圖.jpg" alt="濃度與嗅覺強度關係圖" class="science-chart-img">
+                </div>
+            </div>
+            
+            <div class="science-takeaway">
+                <p class="quote-box text-center">90%不是高標準，是嗅覺系統的最低門檻。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section id="comparison" class="section-padding">
+        <div class="container">
+            <h2 class="section-title">傳統三大工法為何無法真正去異味？</h2>
+            
+            <div class="comparison-visual-container" style="margin-bottom: 40px;">
+                <div class="image-container" style="height: 65vh; min-height: 300px; background-color: transparent; border: none;">
+                    <img src="image/工法對比.jpg" alt="工法對比圖" style="width: 100%; height: 100%; object-fit: contain;">
+                </div>
+            </div>
+
+            <div class="grid-3">
+                <!-- Method 1 -->
+                <div class="method-card">
+                    <div class="bar bar-blue"></div>
+                    <div class="method-content">
+                        <div class="method-header">
+                            <div class="icon-box icon-blue"><i data-lucide="wind"></i></div>
+                            <h3 class="text-blue">稀釋 (通風/換氣)</h3>
+                        </div>
+                        
+                        <div class="method-section">
+                            <h4>原理</h4>
+                            <p>引進新鮮空氣，降低室內污染物濃度</p>
+                        </div>
+                        
+                        <div class="flaw-box">
+                            <h4>根本缺陷</h4>
+                            <p>只能降低「瞬間」濃度。污染源持續生成，濃度重新累積，無法實現持續性深度淨化</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Method 2 -->
+                <div class="method-card">
+                    <div class="bar bar-green"></div>
+                    <div class="method-content">
+                        <div class="method-header">
+                            <div class="icon-box icon-green"><i data-lucide="droplets"></i></div>
+                            <h3 class="text-green">吸附 (活性碳/濾網)</h3>
+                        </div>
+                        
+                        <div class="method-section">
+                            <h4>原理</h4>
+                            <p>利用多孔材料捕捉異味分子</p>
+                        </div>
+                        
+                        <div class="flaw-box">
+                            <h4>根本缺陷</h4>
+                            <p>在低濃度連續暴露下快速飽和，效率急劇衰退。它是「儲存」污染物的倉庫，不是解決方案</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Method 3 -->
+                <div class="method-card">
+                    <div class="bar bar-yellow"></div>
+                    <div class="method-content">
+                        <div class="method-header">
+                            <div class="icon-box icon-yellow"><i data-lucide="shield-alert"></i></div>
+                            <h3 class="text-yellow">遮蓋 (香氛/臭氧)</h3>
+                        </div>
+                        
+                        <div class="method-section">
+                            <h4>這不是去除，是欺騙</h4>
+                            <p>污染物本身並未被消除，只是被掩蓋或麻痺</p>
+                        </div>
+                        
+                        <div class="flaw-box">
+                            <h4>香氛的真相</h4>
+                            <p>提供更強烈的氣味刺激，轉移大腦注意力。香味越重，代表異味問題越沒被處理</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="conclusion-text">
+                <p>這三種方法都無法長時間、穩定地達到 <span class="text-primary">≥90%</span> 的實際濃度去除。<br>它們要麼只是暫時轉移污染，要麼只是掩蓋感知，都無法通過官能測試的「無味」標準。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4 Bad Substances -->
+    <section class="section-padding bg-muted-dark">
+        <div class="container">
+            <h2 class="section-title">四大惡臭物質：環境中的真正「主犯」</h2>
+            
+            <div class="image-container" style="height: 65vh; min-height: 300px; background-color: transparent; border: none;">
+                <img src="image/四大惡臭.jpg" alt="四大惡臭物質：硫化氫、甲硫醇、三甲基胺、糞臭素" style="width: 100%; height: 100%; object-fit: contain;">
+            </div>
+            
+            <div class="highlight-box">
+                <p>
+                    <span class="text-primary bold">為什麼這四個物質如此難纏？</span><br>
+                    它們的嗅覺閾值都在 <span class="text-danger bold">ppb等級 (10⁻⁹)</span>，遠低於法規標準 (ppm等級)。
+                    這些物質需要被<span class="text-primary bold underline">完全分解</span>，而不能僅僅被稀釋或吸附。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lies Section -->
+    <section class="section-padding">
+        <div class="container">
+            <h2 class="section-title">市場的三大謊言</h2>
+            
+            <div class="lies-container">
+                <!-- Lie 1 -->
+                <div class="lie-card">
+                    <div class="lie-header">
+                        <i data-lucide="x-circle" class="text-danger"></i>
+                        <h3>謊言一：異味來自「高濃度污染」</h3>
+                    </div>
+                    <div class="lie-body">
+                        <p class="lie-desc">市場刻意將問題描述為「高濃度」，是為了讓「稀釋」與「吸附」等短期有效的方案看起來合理。</p>
+                        <div class="truth-box">
+                            <div class="truth-label">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>真相</span>
+                            </div>
+                            <p>絕大多數室內異味來自「低濃度、持續性」的化學污染。這才是真正的挑戰。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lie 2 -->
+                <div class="lie-card">
+                    <div class="lie-header">
+                        <i data-lucide="x-circle" class="text-danger"></i>
+                        <h3>謊言二：用儀器判斷有沒有味道</h3>
+                    </div>
+                    <div class="lie-body">
+                        <p class="lie-desc">將標準偷換成儀器數值，是為了降低工程驗收門檻，逃避最真實的挑戰。</p>
+                        <div class="truth-box">
+                            <div class="truth-label">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>真相</span>
+                            </div>
+                            <p>去異味的唯一黃金標準是「官能測試」——人的鼻子。儀器無法回答「人是否聞得到」。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Lie 3 -->
+                <div class="lie-card">
+                    <div class="lie-header">
+                        <i data-lucide="x-circle" class="text-danger"></i>
+                        <h3>謊言三：臭氧或香氛可以「去異味」</h3>
+                    </div>
+                    <div class="lie-body">
+                        <p class="lie-desc">這兩種方法本質都不是「去除」，而是「欺騙」嗅覺。</p>
+                        <div class="truth-box">
+                            <div class="truth-label">
+                                <i data-lucide="check-circle-2"></i>
+                                <span>真相</span>
+                            </div>
+                            <p>香氛用更強的氣味轉移注意力；臭氧利用強烈刺激性暫時麻痺嗅覺受體。污染物本身並未被消除。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section id="solution" class="section-padding solution-bg">
+        <div class="container">
+            <h2 class="section-title">真正的解決方案：PICT 主動分解技術</h2>
+            <p class="subtitle text-primary">PICT = PCO/AOP 等級的主動淨化</p>
+            
+            <div class="core-advantage-box" style="margin-bottom: 60px; max-width: 100%;">
+                <div class="grid-2" style="align-items: center; gap: 40px;">
+                    <div>
+                        <h3 class="box-title" style="margin-top: 0;">PICT 的核心優勢</h3>
+                        <ul class="advantage-list">
+                            <li><i data-lucide="check-circle-2"></i> 即時分解 — 污染物被實時轉化為無害物質</li>
+                            <li><i data-lucide="check-circle-2"></i> 持續有效 — 不會飽和，效率不衰退</li>
+                            <li><i data-lucide="check-circle-2"></i> 達到90%+去除 — 真正通過官能測試</li>
+                            <li><i data-lucide="check-circle-2"></i> 人機共存安全 — 在低濃度下持續運作</li>
+                        </ul>
+                    </div>
+                    <div class="image-container" style="height: auto; min-height: auto; background-color: transparent; border: none; padding: 0; display: flex; justify-content: center;">
+                        <img src="image/PICT光離子催化技術.jpg" alt="PICT光離子催化技術" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+                    </div>
+                </div>
+            </div>
+
+            <div class="image-container" style="height: auto; min-height: auto; background-color: transparent; border: none; padding: 0; margin-bottom: 50px; max-width: 900px; margin-left: auto; margin-right: auto;">
+                <img src="image/分解工程.jpg" alt="分解工程" style="width: 100%; height: auto; border-radius: 12px; display: block;">
+            </div>
+
+            <div class="grid-3" style="margin-bottom: 80px;">
+                <div class="feature-card">
+                    <i data-lucide="microscope" class="feature-icon"></i>
+                    <h3>不是被動過濾</h3>
+                    <p>不是「攔住」污染，而是啟動氧化分解反應</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i data-lucide="activity" class="feature-icon"></i>
+                    <h3>直接處理低濃度污染</h3>
+                    <p>在低濃度條件下，持續、即時地分解異味分子</p>
+                </div>
+                
+                <div class="feature-card">
+                    <i data-lucide="zap" class="feature-icon"></i>
+                    <h3>污染物消失</h3>
+                    <p>不是被儲存或掩蓋，而是被分解為無害物質 (H₂O、CO₂)</p>
+                </div>
+            </div>
+            
+            <div class="final-conclusion" style="max-width: 900px; margin-left: auto; margin-right: auto;">
+                <h4>為什麼 PICT 是唯一正確的方向？</h4>
+                <p>因為它是唯一能在低濃度條件下，持續、即時地將污染物「分解」掉的技術。它不是遮蓋、不是稀釋、不是吸附——它是真正的化學分解。這正是所有真正有效的去異味工程，無法迴避的核心挑戰與唯一解決方向。</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="cta-bg"></div>
+        <div class="container cta-content">
+            <h2>準備好找到真正有效的<br>去異味方案了嗎？</h2>
+            <p>異味不是高濃度問題，而是低濃度、長時間、跨過嗅覺閾值的問題。唯有分解，才能真正通過人的鼻子。</p>
+            <button class="btn-cta" onclick="window.location.href='https://www.pict-inside.com/'">了解 WETOP 解決方案</button>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 去異味工程科學指南 | 基於科學原理的專業分析</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // 初始化 Lucide Icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
